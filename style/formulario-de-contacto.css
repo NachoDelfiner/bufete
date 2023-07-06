@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f3ef;
+}
+a {
+  text-decoration: none;
+}
+/* FORMULARIO */
+.form-container {
+  margin-top: 50px;
+  background-color: #02154b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 800px;
+  font-size: 1.5rem;
+  color: white;
+  gap: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.img-form {
+  height: 150px;
+  width: 150px;
+}
+.input-label-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.input-label-container input {
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+}
+textarea {
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+}
+.form-container button {
+  margin-top: 20px;
+  border: none;
+  background-color: #cf9455;
+  color: white;
+  font-size: 1.1rem;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.form-container button:hover {
+  transform: scale(1.1);
+}
+#errorMsj {
+  font-size: 16px;
+  margin-top: -20px;
+  display: none;
+}
+#errorMsj2 {
+  font-size: 16px;
+  margin-top: -20px;
+  display: none;
+}
+/* EXITO MSJ */
+.exito-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  width: 500px;
+  height: 400px;
+  background-color: #02154b;
+  color: white;
+  display: none;
+}
+.exito-container h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.img-exito {
+  height: 200px;
+  width: 200px;
+}
+.btn-exito {
+  border: none;
+  background-color: #cf9455;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.btn-exito:hover {
+  transform: scale(1.1);
+}

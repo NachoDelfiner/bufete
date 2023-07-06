@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Lawyers.png" type="image/png" />
+    <link rel="stylesheet" href="./style/formulario-de-contacto.css" />
+    <title>Lawyers</title>
+  </head>
+  <body>
+    <!-- FORMULARIO -->
+    <section id="formContainer" class="form-container">
+      <img class="img-form" src="./img/Lawyers.png" alt="" />
+      <h3>Formulario de Contacto</h3>
+      <form class="form">
+        <div class="input-label-container">
+          <label for="nombre">Nombre*</label>
+          <input
+            id="nameInput"
+            type="text"
+            placeholder="Nombre"
+            value=""
+            required
+          />
+        </div>
+        <p id="errorMsj">El campo solo admite letras.</p>
+        <div class="input-label-container">
+          <label for="mail">Correo*</label>
+          <input
+            id="emailInput"
+            type="email"
+            placeholder="ejemplo@ejemplo.com"
+            value=""
+            required
+          />
+        </div>
+        <p id="errorMsj2">Ingree un mail valido</p>
+        <div class="input-label-container">
+          <label for="textarea">Escribe un comentario</label>
+          <textarea placeholder="Escribe algo"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <!-- MENSAJE EXITO -->
+    <section class="exito-container">
+      <img class="img-exito" src="./img/Lawyers.png" alt="" />
+      <h3>Exito al enviar el Formulario</h3>
+      <a id="btnEnviar" class="btn-exito" href="./index.html">Volver al Home</a>
+    </section>
+    <script src="./app/formulario-de-contact.js"></script>
+  </body>
+</html>
