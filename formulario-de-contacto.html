@@ -12,12 +12,18 @@
     <section id="formContainer" class="form-container">
       <img class="img-form" src="./img/Lawyers.png" alt="" />
       <h3>Formulario de Contacto</h3>
-      <form class="form">
+      <form
+        id="form"
+        class="form"
+        action="https://formspree.io/f/mbjvjlzg"
+        method="POST"
+      >
         <div class="input-label-container">
-          <label for="nombre">Nombre*</label>
+          <label name="nombre" for="nombre">Nombre*</label>
           <input
             id="nameInput"
             type="text"
+            name="nombre"
             placeholder="Nombre"
             value=""
             required
@@ -25,10 +31,11 @@
         </div>
         <p id="errorMsj">El campo solo admite letras.</p>
         <div class="input-label-container">
-          <label for="mail">Correo*</label>
+          <label name="email" for="mail">Correo*</label>
           <input
             id="emailInput"
             type="email"
+            name="email"
             placeholder="ejemplo@ejemplo.com"
             value=""
             required
@@ -37,13 +44,13 @@
         <p id="errorMsj2">Ingree un mail valido</p>
         <div class="input-label-container">
           <label for="textarea">Escribe un comentario</label>
-          <textarea placeholder="Escribe algo"></textarea>
+          <textarea name="message" placeholder="Escribe algo"></textarea>
         </div>
         <button type="submit">Enviar</button>
       </form>
     </section>
     <!-- MENSAJE EXITO -->
-    <section class="exito-container">
+    <section id="exito" class="exito-container">
       <img class="img-exito" src="./img/Lawyers.png" alt="" />
       <h3>Exito al enviar el Formulario</h3>
       <a id="btnEnviar" class="btn-exito" href="./index.html">Volver al Home</a>
