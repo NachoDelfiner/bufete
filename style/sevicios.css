@@ -1,0 +1,95 @@
+/* NAVBAR */
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #02154b;
+  font-size: 1.1rem;
+}
+.icon {
+  width: 100px;
+}
+.btn-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+}
+.btn-nav-white {
+  border: none;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.btn-nav-white:hover {
+  color: #cf9455;
+}
+.orange-btn-nav {
+  background-color: #cf9455;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.orange-btn-nav:hover {
+  transform: scale(1.1);
+}
+.span-orange-btn-nav {
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+.headset-img {
+  width: 25px;
+}
+.hr-nav {
+  width: 100%;
+  border: none;
+  height: 5px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 16px;
+  height: 1px;
+  background-color: white;
+  border: none;
+}
+/* MAIN */
+.servicios-header {
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
+  margin: 300px auto;
+}
+.img-que-hacemos {
+  width: 50vw;
+}
+.que-hacemos-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 20px auto;
+}
+.que-hacemos-container h3 {
+  color: #02154b;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.que-hacemos-container p {
+  font-size: 1.2rem;
+  color: #02154b;
+}

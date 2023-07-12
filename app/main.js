@@ -72,5 +72,3 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 
 document.addEventListener("DOMContentLoaded", handleScroll);
-
-// LOGICA CARROUSEL DE TESTIMONIOS

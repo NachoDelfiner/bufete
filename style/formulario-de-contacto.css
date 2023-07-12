@@ -13,6 +13,9 @@ a {
   text-decoration: none;
 }
 /* FORMULARIO */
+#formContainer {
+  display: block;
+}
 .form-container {
   margin-top: 50px;
   background-color: #02154b;
@@ -35,6 +38,15 @@ form {
 .img-form {
   height: 150px;
   width: 150px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form-container-h3 {
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: #cf9455;
 }
 .input-label-container {
   display: flex;
