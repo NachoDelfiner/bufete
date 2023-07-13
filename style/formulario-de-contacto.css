@@ -17,14 +17,14 @@ a {
   display: block;
 }
 .form-container {
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: #02154b;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 35%;
-  height: 800px;
+  height: 100%;
   font-size: 1.5rem;
   color: white;
   gap: 20px;
@@ -43,7 +43,8 @@ form {
   transform: translateX(-50%);
 }
 .form-container-h3 {
-  width: 55%;
+  text-align: center;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
   color: #cf9455;
@@ -65,6 +66,7 @@ textarea {
 }
 .form-container button {
   margin-top: 20px;
+  margin-bottom: 20px;
   border: none;
   background-color: #cf9455;
   color: white;

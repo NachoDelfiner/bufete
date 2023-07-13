@@ -8,6 +8,7 @@ body {
 }
 .nav {
   width: 95%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   padding-left: 50px;
@@ -20,7 +21,7 @@ body {
   font-size: 1.1rem;
 }
 .icon {
-  width: 100px;
+  width: 70px;
 }
 .btn-nav {
   display: flex;
@@ -30,6 +31,7 @@ body {
   width: 500px;
 }
 .btn-nav-white {
+  font-size: 15px;
   border: none;
   font-weight: bold;
   color: white;
@@ -46,6 +48,7 @@ body {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  font-size: 15px;
   transition: transform 0.3s;
 }
 .orange-btn-nav:hover {
@@ -73,7 +76,7 @@ body {
 .about-us-img-1 {
   width: 60vw;
   height: 60vh;
-  margin-top: 104px;
+  margin-top: 80px;
 }
 .about-us-img {
   width: 60vw;
@@ -82,7 +85,7 @@ body {
 .p-orange-about-us {
   color: #cf9455;
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .h3-about-us {
   font-size: 2rem;
@@ -91,8 +94,8 @@ body {
   color: #02154b;
 }
 .p-about-us {
-  font-size: 1.3rem;
   color: #02154b;
+  width: 90%;
 }
 .about-container {
   width: 100vw;
@@ -132,20 +135,15 @@ body {
 }
 .lawyers-history {
   color: #02154b;
-  font-size: 1.2rem;
 }
 /* FOOTER */
 .footer-container {
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 50vh;
-}
-.map {
-  width: 610px;
-  height: 360px;
 }
 .container-columns-footer {
   display: flex;

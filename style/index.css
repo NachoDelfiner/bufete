@@ -468,29 +468,28 @@ body {
 .footer-container {
   margin-top: 150px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 50vh;
-}
-.map {
-  width: 610px;
-  height: 360px;
 }
 .container-columns-footer {
   display: flex;
-  justify-content: space-between;
-  width: 800px;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .column-footer {
   display: flex;
   flex-direction: column;
-  width: 32%;
+  width: 33%;
   height: 80%;
   font-size: 16px;
 }
+.width-column {
+  width: 20%;
+}
 .column-footer h3 {
   color: #02154b;
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 .column-footer a {
