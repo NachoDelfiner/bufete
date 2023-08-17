@@ -40,7 +40,13 @@ form {
   width: 150px;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-100%);
+}
+.orange-croos-form {
+  position: relative;
+  bottom: 85px;
+  background-color: #02154b;
+  cursor: pointer;
 }
 .form-container-h3 {
   text-align: center;

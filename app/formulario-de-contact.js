@@ -1,4 +1,9 @@
-// VERIFICACION DE CAMPOS
+// LOGICA DE CIERRE DE FORMULARIO
+var crossForm = document.querySelector("#cross-form");
+crossForm.addEventListener("click", () => {
+  formContainer.style.display = "none";
+});
+// VERIFICACION DE CAMPOS DE FORMULARIO
 const nameInput = document.querySelector("#nameInput");
 const emailInput = document.querySelector("#emailInput");
 const errorMsj = document.querySelector("#errorMsj");

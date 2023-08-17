@@ -106,6 +106,9 @@
               src="./img/linkedin-icon.svg"
               alt=""
           /></a>
+          <a href=""
+            ><img class="img-footer-carrousel" src="./img/wpp-icon.svg" alt=""
+          /></a>
         </div>
       </section>
     </header>
@@ -401,17 +404,74 @@
           </div>
         </section>
       </section>
-      <!-- FORMULARIO CONTACTO -->
+      <!-- FORMULARIO CONTACTO (LLAMADA A LA ACCIÓN -->
       <section id="contacto" class="contact-container">
         <div class="texto-contacto">
           <p>CONTACTO</p>
           <h3>¿Quieres ponerte en contacto?</h3>
         </div>
-        <a
+        <button
+          id="buttom-open-form"
           class="btn-contact-form"
-          href="./formulario-de-contacto.html"
+          href=""
           target="_blank"
-          >CONTACTARNOS</a
+        >
+          CONTACTARNOS
+        </button>
+      </section>
+      <!-- FORMULARIO & MENSAJE DE EXITO -->
+      <section id="formContainer" class="form-container">
+        <img
+          id="cross-form"
+          class="orange-croos-form"
+          src="./img/cross-orange.svg"
+          alt="boton para salir del formulario"
+        />
+        <img class="img-form" src="./img/Lawyers.png" alt="" />
+        <h3 class="form-container-h3">Formulario de Contacto</h3>
+        <form
+          id="form"
+          class="form"
+          action="https://formspree.io/f/mbjvjlzg"
+          method="POST"
+        >
+          <div class="input-label-container">
+            <label name="nombre" for="nombre">Nombre*</label>
+            <input
+              id="nameInput"
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              value=""
+              required
+            />
+          </div>
+          <p id="errorMsj">El campo solo admite letras</p>
+          <div class="input-label-container">
+            <label name="email" for="mail">Correo*</label>
+            <input
+              id="emailInput"
+              type="email"
+              name="email"
+              placeholder="ejemplo@ejemplo.com"
+              value=""
+              required
+            />
+          </div>
+          <p id="errorMsj2">Ingrse un mail valido</p>
+          <div class="input-label-container">
+            <label for="textarea">Escribe un comentario</label>
+            <textarea name="message" placeholder="Escribe algo"></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <!-- MENSAJE EXITO -->
+      <section id="exito" class="exito-container">
+        <img class="img-exito" src="./img/Lawyers.png" alt="" />
+        <h3>Exito al enviar el Formulario</h3>
+        <a id="btnEnviar" class="btn-exito" href="./index.html"
+          >Volver al Home</a
         >
       </section>
     </main>
@@ -490,6 +550,12 @@
               ><img
                 class="social-media-footer"
                 src="./img/linkedin-blue-icon.svg"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="social-media-footer"
+                src="./img/wpp-blue-icon.svg"
                 alt=""
             /></a>
           </div>

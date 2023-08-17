@@ -3,7 +3,21 @@ document.addEventListener("DOMContentLoaded", function () {
   var carousel = new bootstrap.Carousel(
     document.querySelector("#carouselExample"),
     {
+      interval: 4000,
+      pause: false,
+    }
+  );
+
+  carousel.cycle();
+});
+
+// LOGICA DE ROTACION AUTOMATICA DEL CARROUSEL DE LOS TESTIMONIOS
+document.addEventListener("DOMContentLoaded", function () {
+  var carousel = new bootstrap.Carousel(
+    document.querySelector("#carouselExampleIndicators"),
+    {
       interval: 6000,
+      pause: false,
     }
   );
 
@@ -18,8 +32,8 @@ const resultadosElementos = [
   document.getElementById("resultado4"),
 ];
 
-const numerosObjetivos = [95, 425, 86, 25];
-const tiempoIntervalo = 3000;
+const numerosObjetivos = [95, 325, 86, 25];
+const tiempoIntervalo = 20;
 const simbolos = ["%", "", "+", "%"];
 
 let contadores = [0, 0, 0, 0];
@@ -43,7 +57,7 @@ function iniciarContador(indice) {
         detenerContador(indice);
         numerosAlcanzados[indice] = true;
       }
-    }, tiempoIntervalo / numerosObjetivos[indice]);
+    }, tiempoIntervalo);
   }
 }
 
@@ -70,5 +84,16 @@ function handleScroll() {
 }
 
 window.addEventListener("scroll", handleScroll);
-
 document.addEventListener("DOMContentLoaded", handleScroll);
+
+// LOGICA DE APERTURA DE FORMULARIO
+var buttomOpenForm = document.querySelector("#buttom-open-form");
+buttomOpenForm.addEventListener("click", () => {
+  formContainer.style.display = "block";
+});
+
+// LOGICA DE CIERRE DE FORMULARIO
+var crossForm = document.querySelector("#cross-form");
+crossForm.addEventListener("click", () => {
+  formContainer.style.display = "none";
+});
